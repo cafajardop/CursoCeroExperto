@@ -1,0 +1,107 @@
+            var estudiantes = new[]
+            {
+                new
+                {
+                    EstudianteID = 1,
+                    Nombre = "Héctor",
+                    ApellidoPaterno = "Pérez",
+                    Universidad = "Real de Brasil"
+                },
+                new
+                {
+                    EstudianteID = 2,
+                    Nombre = "Ana",
+                    ApellidoPaterno = "Nepomuceno",
+                    Universidad = "Oxford"
+                },
+                new
+                {
+                    EstudianteID = 3,
+                    Nombre = "Pedro",
+                    ApellidoPaterno = "Sánchez",
+                    Universidad = "Harvard"
+                },
+                new
+                {
+                    EstudianteID = 4,
+                    Nombre = "José",
+                    ApellidoPaterno = "Infante",
+                    Universidad = "Harvard"
+                },
+                new
+                {
+                    EstudianteID = 5,
+                    Nombre = "Regina",
+                    ApellidoPaterno = "Bustamante",
+                    Universidad = "Oxford"
+                },
+                new
+                {
+                    EstudianteID = 6,
+                    Nombre = "Rodrigo",
+                    ApellidoPaterno = "Jiménez",
+                    Universidad = "Brooklyn"
+                },
+                new
+                {
+                    EstudianteID = 7,
+                    Nombre = "Miguel",
+                    ApellidoPaterno = "Hernández",
+                    Universidad = "UNAM"
+                },
+                new
+                {
+                    EstudianteID = 8,
+                    Nombre = "Marilyn",
+                    ApellidoPaterno = "Monroe",
+                    Universidad = "UNAM"
+                },
+                new
+                {
+                    EstudianteID = 9,
+                    Nombre = "Leonardo",
+                    ApellidoPaterno = "Estrada",
+                    Universidad = "Brooklyn"
+                },
+                new
+                {
+                    EstudianteID = 10,
+                    Nombre = "Ricardo",
+                    ApellidoPaterno = "Rojas",
+                    Universidad = "Real de Brasil"
+                },
+            };
+
+            var universidades = new[]
+            {
+                new
+                {
+                    Universidad = "Real de Brasil",
+                    Ciudad = "Brasilia",
+                    Pais = "Brasil"
+                },
+                new
+                {
+                    Universidad = "Oxford",
+                    Ciudad = "Oxford",
+                    Pais = "Reino Unido"
+                },
+                new
+                {
+                    Universidad = "Harvard",
+                    Ciudad = "Cambridge",
+                    Pais = "Estados Unidos"
+                },
+                new
+                {
+                    Universidad = "Brooklyn",
+                    Ciudad = "Nueva York",
+                    Pais = "Estados Unidos"
+                },
+                new
+                {
+                    Universidad = "UNAM",
+                    Ciudad = "Ciudad de México",
+                    Pais = "México"
+                },
+            };
