@@ -327,7 +327,7 @@ namespace LinqDemos
 
             var estudiantesEvaluacionDiferidaTolist = estudiantes
                 .Select(x => x.Nombre)
-                .ToList(); //=> el tolist se refiere a una copia por lo cual no modifica a estudiante
+                .ToList(); //=> el tolist se refiere a una copia por lo cual no modifica a estudiante Ajuste
             foreach (var est in estudiantesEvaluacionDiferida)
             {
                 Console.WriteLine(est);
