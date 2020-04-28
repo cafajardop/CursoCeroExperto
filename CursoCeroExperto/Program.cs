@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -126,7 +127,7 @@ namespace LinqDemos
             //Estudiantes sin cadena interpolada
             IEnumerable<string> nombreEstudiantes = estudiantes.Select(x => x.Nombre);
 
-            //Estudiantes sin cadena interpolada
+            //Estudiantes CON cadena interpolada
             IEnumerable<string> nombreEstudiantesCadena = estudiantes.Select(x => $"{x.Nombre} {x.ApellidoPaterno}");
 
             //Retornar una instancia de nombre completo
@@ -201,7 +202,7 @@ namespace LinqDemos
             Console.WriteLine(numeroUniversidades);
 
             //Eliminar valores duplicados Distinct
-            int numeroPaisesDistinct = universidades
+            int numeroPaisesDistinct = universidades // Resultado 4
                 .Select(u => u.Pais)
                 .Distinct()
                 .Count();
@@ -237,8 +238,14 @@ namespace LinqDemos
                                                   };
             //Con filtro where con lista y equals normal
             var universidadesCOL = from universidad in universidades
-                                   where universidad.Pais == "Estados unidos"
+                                   where universidad.Pais == "Estados Unidos"
                                    select universidad.Pais.ToList();
+
+            //foreach
+            foreach (var univer in universidadesCOL)
+            {
+                Console.WriteLine(univer);
+            }
 
             //Con filtro where string.equals
             var universidadesCOLString = from universidad in universidades
