@@ -346,6 +346,8 @@ namespace LinqDemos
                 Console.WriteLine(est);
             }
 
+            //if (listOccupationCode.FirstOrDefault(x => x.Code == ent.OccupationCode) == null) listErrors.Add(string.Concat($"Fila {index}", $"{pipe}", "No existe el codigo de Ocupacion en la BD o es invalido variable 12"));
+
             Console.ReadLine();
         }
     }
